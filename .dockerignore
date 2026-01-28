@@ -9,15 +9,15 @@ __pycache__/
 # ============================
 # Virtual environments
 # ============================
-venv/
 env/
+venv/
 myvenv/
 
 # ============================
-# Secrets
+# Git
 # ============================
-.env
-.env.*
+.git/
+.gitignore
 
 # ============================
 # OS files
@@ -26,9 +26,10 @@ myvenv/
 Thumbs.db
 
 # ============================
-# Jupyter
+# Logs & temp files
 # ============================
-.ipynb_checkpoints/
+*.log
+*.tmp
 
 # ============================
 # Archives
@@ -38,18 +39,24 @@ Thumbs.db
 *.zip
 
 # ============================
-# Raw data (DO NOT TRACK)
+# Jupyter notebooks
 # ============================
-Data/
-raw_data/
+*.ipynb
 
 # ============================
-# ML experiment outputs
+# Raw data (modeldan tashqari)
+# ============================
+raw_data/
+data/
+
+# ============================
+# ML experiments
 # ============================
 mlruns/
 wandb/
 
 # ============================
-# Logs
+# ENV secrets
 # ============================
-*.log
+.env
+.env.*

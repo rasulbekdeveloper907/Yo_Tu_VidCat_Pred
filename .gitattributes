@@ -1,0 +1,18 @@
+# ============================
+# ML models
+# ============================
+Models/*.joblib filter=lfs diff=lfs merge=lfs -text
+Models/*.pkl    filter=lfs diff=lfs merge=lfs -text
+
+# ============================
+# Large datasets only
+# ============================
+data/**/*.csv      filter=lfs diff=lfs merge=lfs -text
+raw_data/**/*.csv  filter=lfs diff=lfs merge=lfs -text
+part_*             filter=lfs diff=lfs merge=lfs -text
+
+# ============================
+# Optional: large numpy arrays
+# ============================
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
